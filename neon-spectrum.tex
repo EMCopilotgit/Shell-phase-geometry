@@ -6,6 +6,8 @@
 \usepackage{booktabs}
 \usepackage{hyperref}
 \usepackage[numbers,sort&compress]{natbib}
+\usepackage[style=authoryear,backend=biber]{biblatex}
+\addbibresource{references.bib}
 
 \title{Torsional Shell-Phase Orbital Geometry Yields Improved Spectral Predictions for Neon}
 \author{Edward Meisner}
@@ -152,30 +154,15 @@ Closed shells average to zero over $m$, while open subshells inherit linear spli
 \section*{Data and reproducibility}
 Experimental reference energies were taken from standard compilations.\cite{NISTXray,Chantler} A minimal Python/Mathematica notebook (radial integrals, parameter fits, and plots) accompanies this manuscript; code and input data will be made available upon request or in a public repository in the final submission.
 
-\bibliographystyle{unsrtnat}
-\begin{thebibliography}{99}
+\cite{BetheSalpeter}       % Quantum mechanics of atomic systems
+\cite{Grant}               % Relativistic atomic theory
+\cite{Slater}              % Shielding constants
+\cite{KrauseOliver}        % Natural widths and X-ray lines
+\cite{Chantler}            % Form factors and attenuation data
+\cite{NISTXray}            % NIST X-ray database
+\cite{NeonPhotoionization} % High-res neon photoionization
 
-\bibitem{BetheSalpeter}
-H. A. Bethe and E. E. Salpeter, \emph{Quantum Mechanics of One- and Two-Electron Atoms} (Springer, 1957).
 
-\bibitem{Grant}
-I. P. Grant, \emph{Relativistic Quantum Theory of Atoms and Molecules} (Springer, 2007).
 
-\bibitem{Slater}
-J. C. Slater, ``Atomic Shielding Constants,'' Phys. Rev. \textbf{36}, 57 (1930).
-
-\bibitem{KrauseOliver}
-M. O. Krause and J. H. Oliver, ``Natural widths of atomic $K$ and $L$ levels, $K\alpha$ X-ray lines and several $KLL$ Auger lines,'' J. Phys. Chem. Ref. Data \textbf{8}, 329 (1979).
-
-\bibitem{Chantler}
-C. T. Chantler, ``Theoretical form factor, attenuation and scattering tabulation for $Z=1$--$92$ from $E=1$--$10$\,eV to $E=0.4$--$1.0$\,MeV,'' J. Phys. Chem. Ref. Data \textbf{29}, 597 (2000).
-
-\bibitem{NISTXray}
-J. H. Hubbell and S. M. Seltzer (Eds.), NIST X-ray Attenuation and Absorption Databases, National Institute of Standards and Technology.
-
-\bibitem{NeonPhotoionization}
-A. Kikas et al., ``High-resolution photoionization of neon,'' J. Electron Spectrosc. Relat. Phenom. \textbf{77}, 241 (1996).
-
-\end{thebibliography}
 
 \end{document}
