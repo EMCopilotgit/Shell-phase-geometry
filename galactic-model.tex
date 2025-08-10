@@ -9,9 +9,11 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage[style=authoryear,backend=biber]{biblatex}
+\addbibresource{references.bib}
 
 \title{Shell Phase Geometry: A Torsional Framework for Galactic Dynamics}
-\author[1]{Edward [Surname]}
+\author[1]{Edward Meisner}
 \affil[1]{Unaffiliated, Brooklyn, NY, United States \\ \texttt{[email@domain.com]}}
 \date{\today}
 
@@ -96,9 +98,9 @@ The author thanks Copilot by Microsoft for its assistance in drafting, organizin
 \cite{binney}       % For galactic dynamics textbook reference
 \cite{hu2024}       % For recent gravitoelectric–gravitomagnetic interaction model
 
-\bibliographystyle{plainnat}  % Or another style like apj, aasjournal, etc.
-\bibliography{references}     % Assuming your .bib file is named references.bib
+
 
 \end{document}
+
 
 
